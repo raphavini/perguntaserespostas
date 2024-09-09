@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="perguntaserespostascatolicas"
-run/main_scene="res://iniciar.tscn"
+run/main_scene="res://screens/tela_inicial/iniciar.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/fullsize=false
 config/icon="res://icon.svg"

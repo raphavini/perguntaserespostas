@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://kldipf8tjk6b"]
 
-[ext_resource type="Script" path="res://perguntas.gd" id="1_1rjf0"]
-[ext_resource type="Theme" uid="uid://d3g0e85hsokpt" path="res://wrong.tres" id="2_vn2yk"]
-[ext_resource type="Theme" uid="uid://ds1tja6pclo4t" path="res://tema_not_selected.tres" id="3_dwakc"]
+[ext_resource type="Script" path="res://screens/tela_perguntas/perguntas.gd" id="1_1rjf0"]
+[ext_resource type="Theme" uid="uid://d3g0e85hsokpt" path="res://themes/wrong.tres" id="2_vn2yk"]
+[ext_resource type="Theme" uid="uid://ds1tja6pclo4t" path="res://themes/tema_not_selected.tres" id="3_dwakc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gjol"]
 bg_color = Color(0.501961, 0.572549, 0.921569, 1)

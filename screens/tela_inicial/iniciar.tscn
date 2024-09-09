@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://t4t3myud03s6"]
 
-[ext_resource type="Script" path="res://iniciar.gd" id="1_336pq"]
+[ext_resource type="Script" path="res://screens/tela_inicial/iniciar.gd" id="1_336pq"]
 
 [node name="Iniciar" type="Node2D"]
 script = ExtResource("1_336pq")
