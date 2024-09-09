@@ -35,7 +35,7 @@ func load_current_question():
 	lbl_question.text=Global.current_question.question
 	for i in range(btn_list.size()):
 		btn_list[i].text=Global.current_question.shuffled[i]
-		btn_list[i].theme = load("res://tema_not_selected.tres")
+		btn_list[i].theme = load("res://themes/tema_not_selected.tres")
 		btn_list[i].disabled=false
 
 func _on_resposta_1_pressed() -> void:
@@ -53,10 +53,10 @@ func select_button(index_button) -> void:
 	for i in range(btn_list.size()):
 		if i == index_button:
 			print("BOTÃO ", i + 1, " - Selecionado")
-			btn_list[i].theme = load("res://tema_selected.tres")
+			btn_list[i].theme = load("res://themes/tema_selected.tres")
 		else:
 			print("Desmarcando botão ", i)
-			btn_list[i].theme = load("res://tema_not_selected.tres")
+			btn_list[i].theme = load("res://themes/tema_not_selected.tres")
 
 func _on_timer_timeout() -> void:
 	progress_bar.value -= 1  # Incrementa o valor da barra a cada 
@@ -69,10 +69,10 @@ func _on_timer_timeout() -> void:
 func check_awnser():
 	if Global.current_question.shuffled[awnser_selected]==Global.current_question.correct_answer:
 		lbl_result.text="ACERTOU"
-		lbl_result.theme=load("res://correct.tres")
+		lbl_result.theme=load("res://themes/correct.tres")
 	else:
 		lbl_result.text="ERROU"
-		lbl_result.theme=load("res://wrong.tres")
+		lbl_result.theme=load("res://themes/wrong.tres")
 	progress_bar.visible=false
 	lbl_result.visible=true
 	for i in range(btn_list.size()):
