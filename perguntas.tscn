@@ -1,0 +1,113 @@
+[gd_scene load_steps=9 format=3 uid="uid://kldipf8tjk6b"]
+
+[ext_resource type="Script" path="res://perguntas.gd" id="1_1rjf0"]
+[ext_resource type="Theme" uid="uid://d3g0e85hsokpt" path="res://wrong.tres" id="2_vn2yk"]
+[ext_resource type="Theme" uid="uid://ds1tja6pclo4t" path="res://tema_not_selected.tres" id="3_dwakc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gjol"]
+bg_color = Color(0.501961, 0.572549, 0.921569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gpea"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Theme" id="Theme_hfr8x"]
+ProgressBar/styles/background = SubResource("StyleBoxFlat_2gjol")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_2gpea")
+
+[sub_resource type="Theme" id="Theme_p614w"]
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yklks"]
+bg_color = Color(0.229028, 0.543993, 0.436287, 1)
+
+[node name="Perguntas" type="Node2D"]
+script = ExtResource("1_1rjf0")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_right = 288.0
+offset_bottom = 512.0
+
+[node name="VBox1" type="VBoxContainer" parent="."]
+offset_right = 288.0
+offset_bottom = 509.0
+theme_override_constants/separation = 20
+
+[node name="ProgressBar" type="ProgressBar" parent="VBox1"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme = SubResource("Theme_hfr8x")
+max_value = 10.0
+fill_mode = 1
+show_percentage = false
+
+[node name="LabelResult" type="Label" parent="VBox1"]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_vn2yk")
+
+[node name="VBoxQuestion" type="VBoxContainer" parent="VBox1"]
+layout_mode = 2
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="Label" type="RichTextLabel" parent="VBox1/VBoxQuestion"]
+layout_mode = 2
+theme = SubResource("Theme_p614w")
+text = "Pergunta"
+fit_content = true
+
+[node name="Resposta1" type="Button" parent="VBox1/VBoxQuestion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yklks")
+action_mode = 0
+text = "1"
+
+[node name="Resposta2" type="Button" parent="VBox1/VBoxQuestion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yklks")
+action_mode = 0
+text = "2"
+
+[node name="Resposta3" type="Button" parent="VBox1/VBoxQuestion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yklks")
+action_mode = 0
+text = "3"
+
+[node name="Resposta4" type="Button" parent="VBox1/VBoxQuestion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yklks")
+action_mode = 0
+text = "4"
+
+[node name="Resposta5" type="Button" parent="VBox1/VBoxQuestion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yklks")
+action_mode = 0
+text = "5"
+
+[node name="BtnNextQuestion" type="Button" parent="VBox1"]
+visible = false
+layout_mode = 2
+theme = ExtResource("3_dwakc")
+text = "Próxima >"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="VBox1/VBoxQuestion/Resposta1" to="." method="_on_resposta_1_pressed"]
+[connection signal="pressed" from="VBox1/VBoxQuestion/Resposta2" to="." method="_on_resposta_2_pressed"]
+[connection signal="pressed" from="VBox1/VBoxQuestion/Resposta3" to="." method="_on_resposta_3_pressed"]
+[connection signal="pressed" from="VBox1/VBoxQuestion/Resposta4" to="." method="_on_resposta_4_pressed"]
+[connection signal="pressed" from="VBox1/VBoxQuestion/Resposta5" to="." method="_on_resposta_5_pressed"]
+[connection signal="pressed" from="VBox1/BtnNextQuestion" to="." method="_on_btn_next_question_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

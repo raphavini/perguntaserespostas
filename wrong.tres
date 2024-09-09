@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://d3g0e85hsokpt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fi8qe"]
+bg_color = Color(0.941176, 0.423529, 0.384314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5noch"]
+bg_color = Color(0.942488, 0.425475, 0.383568, 1)
+
+[resource]
+Button/styles/normal = SubResource("StyleBoxFlat_fi8qe")
+Label/styles/normal = SubResource("StyleBoxFlat_5noch")

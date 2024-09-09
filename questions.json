@@ -1,0 +1,54 @@
+{
+	"questions": [
+		{
+			"question": "Qual é o primeiro livro da Bíblia?",
+			"correct_answer": "Gênesis",
+			"answers": ["Gênesis", "Êxodo", "Levítico", "Números", "Deuteronômio"]
+		},
+		{
+			"question": "Quem construiu a arca para sobreviver ao dilúvio?",
+			"correct_answer": "Noé",
+			"answers": ["Noé", "Abraão", "Moisés", "Davi", "Salomão"]
+		},
+		{
+			"question": "Quantos dias Deus levou para criar o mundo?",
+			"correct_answer": "6 dias",
+			"answers": ["6 dias", "7 dias", "10 dias", "40 dias", "30 dias"]
+		},
+		{
+			"question": "Qual apóstolo negou Jesus três vezes?",
+			"correct_answer": "Pedro",
+			"answers": ["Pedro", "Paulo", "João", "Tiago", "Tomé"]
+		},
+		{
+			"question": "Qual foi o último livro da Bíblia a ser escrito?",
+			"correct_answer": "Apocalipse",
+			"answers": ["Apocalipse", "Mateus", "Atos", "Romanos", "Efésios"]
+		},
+		{
+			"question": "Quantos evangelhos há no Novo Testamento?",
+			"correct_answer": "4",
+			"answers": ["4", "3", "5", "7", "12"]
+		},
+		{
+			"question": "Quem foi o líder que libertou os israelitas do Egito?",
+			"correct_answer": "Moisés",
+			"answers": ["Moisés", "Abraão", "Isaac", "Jacó", "José"]
+		},
+		{
+			"question": "Onde Jesus nasceu?",
+			"correct_answer": "Belém",
+			"answers": ["Belém", "Jerusalém", "Nazaré", "Egito", "Galiléia"]
+		},
+		{
+			"question": "Quem foi lançado na cova dos leões?",
+			"correct_answer": "Daniel",
+			"answers": ["Daniel", "Davi", "Ezequiel", "José", "Salomão"]
+		},
+		{
+			"question": "Qual rei foi conhecido pela sua grande sabedoria?",
+			"correct_answer": "Salomão",
+			"answers": ["Salomão", "Davi", "Saul", "Ezequias", "Josias"]
+		}
+	]
+}
